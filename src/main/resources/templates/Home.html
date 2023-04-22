@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>
+
+	<link rel="stylesheet" th:href="@{/style/style.css}"/>
+</head>
+
+<body>
+	<div id="main">
+
+		<table id="table">
+			<tr class="row">
+				<td>Mã sinh viên</td>
+				<td>Tên sinh viên</td>
+				<td>mail</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<button class="link_button" onclick="showAddRow()" href="">Thêm sinh viên</button>
+	</div>
+
+	<form action="" class="container_input hidden">
+		<h1 class="title">Thêm sinh viên</h1>
+
+		<div class="input">
+			<label for="ten">Tên sinh viên:</label>
+			<input id="ten" type="text">
+		</div>
+
+		<div class="input">
+			<label for="ngay">email:</label>
+			<input id="mail" type="text">
+		</div>
+
+		<div id="js-control_button" style="display: flex; justify-content: flex-end;">
+		</div>
+	</form>
+
+	<script th:src="@{/scripts/script.js}"></script>
+</body>
+
+</html>

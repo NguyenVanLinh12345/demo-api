@@ -1,0 +1,115 @@
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		#main {
+			margin: 10px auto 0px;
+			width: 1000px;
+		}
+
+		table {
+			/* thuộc tính CSS được sử dụng để quy định cách viền của các ô trong bảng HTML được hiển thị. 
+            Nếu thuộc tính này được thiết lập là collapse, các ô trong bảng sẽ không có khoảng trắng giữa 
+            chúng và chúng sẽ được hiển thị như là một ô duy nhất với đường viền xung quanh. Nếu thiết lập 
+            là separate, các ô sẽ hiển thị với khoảng trắng giữa chúng và có thể có đường viền riêng biệt cho mỗi ô. */
+			border-collapse: collapse;
+		}
+
+		#table {
+			width: 100%;
+			border-radius: 4px;
+			box-shadow: -1px 1px 8px 0px rgb(209 208 232);
+		}
+
+		.row {
+			border-bottom: 2px solid rgb(118 99 177 / 24%);
+		}
+
+		.row:first-child {
+			background-color: rgb(124, 151, 248);
+			border-bottom: none;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+
+		.row:last-child {
+			border-bottom: none;
+		}
+
+		.row td {
+			text-align: center;
+			padding: 10px 20px;
+		}
+
+		.link {
+			font-size: 16px;
+			color: skyblue;
+			cursor: pointer;
+		}
+
+		.link_button {
+			display: inline-block;
+			background-color: rgb(234, 232, 232, 0.2);
+			box-shadow: 0px 0px 2px 0px rgb(128, 127, 142);
+			text-decoration: none;
+			color: black;
+			padding: 8px 12px;
+			border-radius: 2px;
+			margin-top: 20px;
+			border: none;
+			cursor: pointer;
+		}
+
+		.container_input {
+			position: fixed;
+			padding: 40px 60px;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: 8px;
+			color: white;
+			font-size: 20px;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			box-shadow: 0 0 0px 490px rgba(0, 0, 0, 0.4);
+		}
+
+		.input {
+			margin-top: 12px;
+		}
+
+		.input label:not([name="gioi"]) {
+			width: 160px;
+			display: inline-block;
+		}
+
+		.input label[for="nu"] {
+			margin-left: 12px;
+		}
+
+		.input input[type="text"] {
+			outline: none;
+			border: none;
+			padding: 4px 12px;
+			width: calc(100% - 200px);
+			font-size: 20px;
+		}
+
+		.submit {
+			background-color: rgba(255, 255, 255);
+			box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 8px 12px;
+			border-radius: 2px;
+			margin-top: 20px;
+			border: 2px solid white;
+			cursor: pointer;
+			margin-left: 12px;
+		}
+
+		.hidden {
+			display: none;
+		}
